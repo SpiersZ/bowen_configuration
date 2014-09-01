@@ -1,0 +1,24 @@
+# screenrc
+
+# options
+altscreen on
+attrcolor b ".I"
+bell_msg '^Gbell in window %n...'
+defbce on
+defflow off
+deflogin on
+defutf8 on
+defencoding UTF-8
+hardcopydir "$HOME/.screen/hardcopy"
+hardstatus alwayslastline '%{= kK} %{= G}[%{= W}%H%{= G}] %= %{= K}%-w%{= G}[%{= W}%n %t%{= G}]%{= K}%+w '
+sorendition '= W'
+startup_message off
+term xterm-256color
+vbell off
+
+# bindings
+bind ^\
+bind ^q quit
+
+# see: http://pbrisbin.com/posts/screen_tricks
+source "$SCREEN_CONF_DIR/$SCREEN_CONF"
